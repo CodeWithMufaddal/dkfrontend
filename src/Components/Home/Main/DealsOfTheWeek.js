@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './DealsOfTheWeek.css'
 const DealsOfTheWeek = () => {
 
    const DealsOfTheWeek = [

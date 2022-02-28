@@ -1,5 +1,12 @@
+* {
+   box-sizing: border-box;
+}
+body {
+   min-height: 100vh;
+}
 .price {
    color: blue;
+   font-weight: 500;
 }
 
 .text-muted {
@@ -8,23 +15,48 @@
 
 .btn {
    background-color: #fff;
-   border: none;
+   border: 1px solid #b0b6cb;
    color: #000;
    padding: 8px 16px;
    margin: 10px;
    text-align: center;
    text-decoration: none;
    border-radius: 3px;
-   outline: 1px solid #b0b6cb;
-   transition: background-color 0.3s , color 0.3s ease-in-out;
+   outline: none;
+   transition: background-color 0.3s, color 0.3s ease-in-out;
 }
 .btn:hover {
    background-color: #2c3a74;
    color: #fff;
    outline: none;
-   transition: background-color 0.3s , color 0.3s ease-in-out;
+   transition: background-color 0.3s, color 0.3s ease-in-out;
 }
 
 .btn:active {
    filter: brightness(0.8);
+}
+
+.border {
+   border: 1px solid;
+}
+
+.w-100 {
+   width: 100%;
+}
+
+.d-flex {
+   display: flex;
+}
+
+.border-none {
+   border: none;
+}
+
+.m-0 {
+   margin: 0;
+}
+
+.discountedPrice {
+   color: #bdbdbd;
+   text-decoration: line-through;
 }

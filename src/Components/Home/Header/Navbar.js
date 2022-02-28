@@ -27,39 +27,38 @@ const Navbar = () => {
   ]
   return (
     <div className="Header__Navbar">
-      <div className="">
-        {/* Navbar Top Logo , input . links  */}
-        <div className="">
-          {/*  Navbar Top Logo */}
-          <div className="Header__NavbarLogo">
-            <img src="Img/dk_logo.jpg" alt="Logo" />
-          </div>
-          {/*  Search Input */}
-          <div className="Header__NavbarInput">
-            <input type="search" name="search" id="search" />
-            <button type="submit">Search</button>
-          </div>
-
-          {/*  Last 3 icon options */}
-          <div className="Header__option">
-            <div className="Header__NavbarIcon">
-              <i className="fa-regular fa-user"></i>
-            </div>
-            <div className="Header__NavbarIcon">
-              <i className="fa-regular fa-heart"></i>
-            </div>
-            <div className="Header__NavbarIcon">
-              <div className="Header__NavbarBasketBadeg">
-                0
-              </div>
-              <i className="fa-solid fa-bag-shopping"></i>
-            </div>
-          </div>
+      {/* Navbar Top Logo , input . links  */}
+      <div className="Header__NavbarTop">
+        {/*  Navbar Top Logo */}
+        <div className="Header__NavbarLogo">
+          <img src="Img/dk_logo.jpg" className="w-100" alt="Logo" />
+        </div>
+        {/*  Search Input */}
+        <div className="Header__NavbarInput">
+          <input type="search" name="search" id="search" />
+          <button type="submit" className="btn m-0">Search</button>
         </div>
 
+        {/*  Link 3 icon options */}
+        <div className="Header__option">
+          <div className="Header__NavbarIcon">
+            <i className="fa-regular fa-user"></i>
+          </div>
+          <div className="Header__NavbarIcon">
+            <i className="fa-regular fa-heart"></i>
+          </div>
+          <div className="Header__NavbarIcon">
+            <div className="Header__NavbarBasketBadeg">
+              0
+            </div>
+            <i className="fa-solid fa-bag-shopping"></i>
+          </div>
+        </div>
+      </div>
 
-        {/*  Navbar Categories */}
-        {/* <div className="">
+
+      {/*  Navbar Categories */}
+      {/* <div className="">
           <div className="Header__NavbarCategories">
             <select name="" id="" value="Watches" onMouseUp={hover} className="">
               <option value="Watches" disabled hidden>Watches</option>
@@ -142,8 +141,6 @@ const Navbar = () => {
 
 
         </div> */}
-
-      </div>
     </div>
   )
 }

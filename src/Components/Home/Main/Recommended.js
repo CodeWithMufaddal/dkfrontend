@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Recommended.css'
 const Recommended = () => {
 
    const Recommended = [
@@ -17,19 +17,16 @@ const Recommended = () => {
       <div>
          <div className="Recommended__title">
             <h3>Recommended For You</h3>
-            <div className="">
+            <div className="Rocommended_titleRight">
                <span>New Arrivals</span>
                <span>Best Seller</span>
                <span>Featured</span>
                <span><i className="fa-solid fa-angle-left"></i> <i className="fa-solid fa-angle-right"></i> </span>
-
             </div>
          </div>
 
          <div className="Recommended__content">
             <div className="Recommended__contentInner">
-
-
                {Recommended.map((Recommended, index) => {
                   const { img, originalPrice, descountedPrice, rating, title } = Recommended
                   return <RecommendedProduct
@@ -50,15 +47,14 @@ const Recommended = () => {
 
 
 const RecommendedProduct = ({ img, descountedPrice, originalPrice, rating, title }) => {
-   return (<div className="Recommended__contentItem">
-      <div className="Recommended__contentItemBackground"></div>
-      <div className="Recommended__contentItemMain">
+   return (
+      <div className="Recommended__contentItem">
          <div className="badge">
             <span>new</span>
             <span><i className="fa-regular fa-heart"></i></span>
          </div>
          <div className="Recommended__contentItem__img">
-            <img src={img} alt="" />
+            <img src={img} style={{ width: '100%' }} alt="" />
          </div>
          <div className="Recommended__contentItem__info">
             <div className="Recommended__Price">
@@ -80,7 +76,6 @@ const RecommendedProduct = ({ img, descountedPrice, originalPrice, rating, title
             <div className="Recommended__AddToCompare">Add To Compare</div>
          </div>
       </div>
-   </div>
    )
 }
 

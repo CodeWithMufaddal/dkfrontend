@@ -1,0 +1,35 @@
+/* Header__top Part */
+.Header__top {
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.Header__top_Contact {
+   display: flex;
+   border-right: 1px solid blue;
+   margin: 3px;
+   padding: 5px;
+   white-space: nowrap;
+}
+
+.Header__top_Contact span,
+.icon {
+   font-size: calc(0.3vw + 0.3rem);
+   font-weight: bold;
+}
+
+.flag {
+   width: 25px;
+   display: flex;
+   align-items: center;
+}
+
+.flagimg {
+   width: 100%;
+}
+
+.currancy {
+   border: none;
+   outline: none;
+}
+

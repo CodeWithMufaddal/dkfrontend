@@ -1,0 +1,64 @@
+.Header__Navbar {
+   border-bottom: 1px solid #d1d1d1;
+   background-color: #fff;
+}
+
+.Header__NavbarTop {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.5rem 1rem;
+}
+
+.Header__NavbarLogo {
+   width: 60px;
+}
+
+.Header__NavbarInput {
+   display: flex;
+}
+.Header__NavbarInput input {
+   flex: 1;
+   outline: none;
+   border: 1px solid #b0b6cb;
+   border-radius: 4px 0px 0px 4px;
+   border-right: none;
+   padding: 0.5rem;
+   font-size: calc(0.3vw + 0.3rem);
+   font-weight: bold;
+}
+
+.Header__NavbarInput button {
+   border-left: none;
+   border-radius: 0px 4px 4px 0px;
+}
+
+.Header__option {
+   display: flex;
+}
+
+.Header__NavbarIcon {
+   border: 1px solid;
+}
+.Header__NavbarBasketBadeg::before {
+   content: "0";
+   position: absolute;
+   left: 10px;
+   position: absolute;
+   font-size: calc(0.4vw + 0.4rem);
+   z-index: 10;
+   background-color: blue;
+   color: #fff;
+   border-radius: 7px;
+   padding: 0.1em 0.3em;
+}
+
+.Header__NavbarBasketBadeg {
+   position: absolute;
+   font-size: calc(0.3vw + 0.3rem);
+   z-index: 10;
+   background-color: blue;
+   color: #fff;
+   border-radius: 7px;
+   padding: 0.1em 0.3em;
+}
